@@ -1,7 +1,12 @@
 import styles from "./App.module.css";
+import Home from "./pages/Home";
 
 function App() {
-  return <div>Hello world</div>;
+  return (
+    <div className={styles}>
+      <Home />
+    </div>
+  );
 }
 
 export default App;
