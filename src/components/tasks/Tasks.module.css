@@ -1,13 +1,11 @@
 .tableContainer {
   display: flex;
-  border: 1px solid black;
-  border-radius: 10px;
   margin: 9rem;
 }
 
 .title {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 20px !important;
+  font-weight: 700 !important;
 }
 
 .checkbox {

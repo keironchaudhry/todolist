@@ -15,7 +15,10 @@ export default function Tasks() {
   return (
     <div className={styles.tableContainer}>
       <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 650 }} aria-label="caption table">
+        <Table
+          sx={{ minWidth: 650, borderRadius: 1 }}
+          aria-label="caption table"
+        >
           <caption>Completed</caption>
           <TableHead>
             <TableRow>
