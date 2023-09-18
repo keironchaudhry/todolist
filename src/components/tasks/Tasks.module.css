@@ -1,0 +1,5 @@
+.tableContainer {
+  display: flex;
+  border: 10px solid black;
+  margin: 10rem;
+}
