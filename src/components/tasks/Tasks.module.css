@@ -1,0 +1,14 @@
+.tableContainer {
+  display: flex;
+  margin: 9rem;
+}
+
+.title {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+.checkbox {
+  display: flex;
+  margin: 10px;
+}
