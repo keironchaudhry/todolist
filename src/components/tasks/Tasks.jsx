@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -12,6 +14,13 @@ import Input from "@mui/material/Input";
 import styles from "./Tasks.module.css";
 
 export default function Tasks() {
+  const [tasks, setTasks] = useState(false);
+
+  const handleCheckboxChange = (event) => {
+    setTasks(event.target.checked);
+    console.log(tasks)
+  };
+
   return (
     <div className={styles.tableContainer}>
       <TableContainer component={Paper}>
@@ -27,7 +36,12 @@ export default function Tasks() {
           </TableHead>
           <TableBody>
             <TableCell>
-              <TableCell padding="checkbox" className={styles.checkbox}>
+              <TableCell
+                padding="checkbox"
+                value={tasks}
+                className={styles.checkbox}
+                onChange={handleCheckboxChange}
+              >
                 <Checkbox />
                 <Input />
               </TableCell>
